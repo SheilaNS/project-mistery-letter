@@ -3,8 +3,12 @@
   padding: 0;
 }
 
-p {
+#carta-gerada {
   margin-top: 50px;
+}
+
+#carta-contador {
+    margin-top: 10px;
 }
 
 .newspaper {

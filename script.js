@@ -1,6 +1,7 @@
 const botaoCriarCarta = document.getElementById('criar-carta'); // button
 const textoCarta = document.getElementById('carta-texto'); // input
-const textoGerado = document.getElementById('carta-gerada'); // p
+const textoGerado = document.getElementById('carta-gerada'); // p da carta
+const textoContador = document.getElementById('carta-contador'); // p do contador
 const carta = textoGerado.childNodes;
 const estilo = ['newspaper', 'magazine1', 'magazine2'];
 const tamanho = ['medium', 'big', 'reallybig'];
@@ -45,6 +46,7 @@ function geraCarta() {
     span.addEventListener('click', escolheDeNovo);
     textoGerado.appendChild(span);
   }
+  textoContador.innerText = palavras.length;
 }
 
 function verificaInput() {
