@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+p {
+    margin-top: 50px;
+}
+
 .newspaper {
   background-color: antiquewhite;
   font-family: Times New Roman, Times, serif;
