@@ -28,10 +28,12 @@ function resetaCarta() {
   }
 }
 
-/* function escolheDeNovo() {
-
+function escolheDeNovo(event) {
+  const evento = event.target;
+  evento.className = '';
+  escolheLista(evento);
 }
- */
+
 function geraCarta() {
   resetaCarta();
   let palavras = [];
@@ -40,7 +42,7 @@ function geraCarta() {
     const span = document.createElement('span');
     span.innerText = palavras[i];
     escolheLista(span);
-    // span.addEventListener('click', escolheDeNovo);
+    span.addEventListener('click', escolheDeNovo);
     textoGerado.appendChild(span);
   }
 }
