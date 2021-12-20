@@ -22,4 +22,15 @@ function geraCarta() {
   }
 }
 
-botaoCriarCarta.addEventListener('click', geraCarta);
+function verificaInput() {
+  if (textoCarta.value !== ' ') {
+    geraCarta();
+  } else {
+    resetaCarta();
+    const span = document.createElement('span');
+    span.innerText = 'Por favor, digite o conteúdo da carta.';
+    textoGerado.appendChild(span);
+  }
+}
+
+botaoCriarCarta.addEventListener('click', verificaInput);
